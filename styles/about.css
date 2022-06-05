@@ -1,0 +1,121 @@
+.Hero {
+    background-image: url("bg/fleur-kaan-w4Dj3MshHQ0-unsplash.jpg");
+    height: clamp(300px, 85vh, 500px);
+}
+
+.HeroContent h1 {
+    font-size: 12rem;
+}
+
+.Marquee {
+    font-size: 4rem;
+    letter-spacing: normal;
+}
+
+.AboutSection {
+    width: 70%;
+
+    margin: auto;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: center;
+    gap: 20px;
+}
+
+.Heading {
+    font-size: 8rem;
+}
+
+.Quote {
+    font-size: 3.2rem;
+}
+
+.VisionMission {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.VisionMission .TextContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.TextContainer h2 {
+    font-size: 4rem;
+}
+
+.TextContainer p {
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.SeparatorContainer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Separator {
+    width: 80%;
+    height: 1px;
+
+    background-color: black;
+}
+
+.CommitmentsSection {
+    text-align: center;
+}
+
+.CommitmentsSection .Heading {
+    font-size: 7rem;
+}
+
+.CommitmentsSection h3 {
+    font-size: 3rem;
+}
+
+.Commitments {
+    padding-left: 30rem;
+    padding-right: 30rem;
+    padding-top: 8rem;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+
+
+.Commitment {
+    /*padding-top: 20px;*/
+    width: clamp(100px, 10vw, 500px);
+}
+
+.Commitment h4 {
+    padding-top: 1rem;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.Commitment .ImageContainer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Commitment .ImageContainer img {
+    width: 100%;
+    object-fit: contain;
+}

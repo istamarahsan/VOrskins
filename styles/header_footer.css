@@ -1,0 +1,194 @@
+/* Header */
+
+.Header {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    /*height: 78px;*/
+
+    background-color: #F8EAE390;
+
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header h2 {
+    /*font-size: 3.4rem;*/
+    font-size: 35px;
+    color: black;
+}
+
+#menu_button {
+    cursor: pointer;
+    /*height: clamp(20px, 4.8rem, 4.8rem);*/
+    height: 40px;
+    object-fit: contain;
+}
+
+#cart {
+    margin-right: 2rem;
+    font-size: 20px;
+}
+
+/* Footer */
+
+.Subscribe {
+    color: white;
+
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
+
+    /*height: 121px;*/
+    background-color: #494545;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SubscribeMessage {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.Subscribe .EmailInput {
+    width: 300px;
+    background: transparent;
+    outline: none;
+    border-color: white;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.EmailInput::placeholder {
+    color: white;
+}
+
+.SubscribeButton {
+    height: 100%;
+    border-color: white;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.FooterMid {
+    padding: 1rem 5rem;
+
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill, auto);*/
+    /*grid-auto-columns: minmax(200px, auto);*/
+
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+.FooterMid h1 {
+    min-width: 500px;
+    font-size: 18rem;
+    font-weight: 100;
+}
+
+.FooterMid .Links {
+    min-width: 300px;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-flow: column;
+
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.FooterMid .Links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.FooterMid .Links li {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.Attribution {
+    border-top: 1px solid black;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* Sidebar */
+
+#sidebar {
+    display: none;
+    /*display: block;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    border-right: 1px solid #000000;
+
+    height: 100%;
+    /*width: clamp(200px, 400px, 400px);*/
+    width: 400px;
+
+    background-color: #F8EAE3;
+    z-index: 2;
+    overflow: auto;
+}
+
+.SidebarContent {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.SidebarItem {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.SidebarItem a {
+    display: block;
+    padding: 2rem 1.2rem 2rem 3.8rem;
+    width: 100%;
+
+    transition: background-color 0.2s;
+}
+
+.SidebarItem a:hover {
+    background-color: #FFFFFF;
+}
+
+
+#sidebar_close_container {
+    padding-top: 0;
+    padding-right: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: right;
+    align-items: baseline;
+}
+
+#sidebar_close {
+    cursor: pointer;
+    padding: 0.2rem;
+    font-size: 30px;
+}

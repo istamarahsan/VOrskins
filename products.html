@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VOrskins - Products</title>
+    <link rel="stylesheet" href="styles/header_footer.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/products.css">
+
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/products.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="Header">
+    <div class="ImageContainer">
+        <img src="assets/ico/hamburg.png" alt="Menu" id="menu_button" onclick="open_sidebar()">
+    </div>
+    <a href="index.html"><h2>VOrskins</h2></a>
+    <div id="cart">
+        <span>Cart  (0)</span>
+        <!--        <div class="ImageContainer"><img src="" alt=""></div>-->
+    </div>
+</header>
+
+<div id="sidebar">
+    <div class="SidebarContent">
+        <div class="SidebarItem" id="sidebar_close_container">
+            <span id="sidebar_close" onclick="close_sidebar()">✖</span>
+        </div>
+        <div class="SidebarItem">
+            <a href="products.html">PRODUCTS</a>
+        </div>
+        <div class="SidebarItem">
+            <a href="specials.html">SPECIALS</a>
+        </div>
+        <div class="SidebarItem">
+            <a href="subscribe.html">SUBSCRIBE</a>
+        </div>
+        <div class="SidebarItem">
+            <a href="about.html">ABOUT US</a>
+        </div>
+        <div class="SidebarItem">
+            <a href="index.html">HOME</a>
+        </div>
+    </div>
+</div>
+
+<div class="Hero">
+    <div class="HeroContent">
+        <h1>PRODUCTS</h1>
+    </div>
+</div>
+
+<div class="Accordion">
+    <div class="Category">
+            <input type="checkbox" class="AccordionInput" name="product_category" id="skincare_section">
+            <label for="skincare_section" class="AccordionLabel">Skincare</label>
+        <div class="AccordionContent">
+            <div class="Products">
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">ROSA</span>
+                        <span class="ProductPrice">Rp250.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/kadarius-seegars-Mxy5gokl8mE-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">ROSA</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                        Suspendisse lectus urna, eleifend et ante tincidunt,
+                                        rutrum semper magna. Praesent laoreet,
+                                        sem quis mattis luctus, ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                        Suspendisse lectus urna, eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">ESTHER</span>
+                        <span class="ProductPrice">Rp70.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/mathilde-langevin-mv2Tr1U4ptQ-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">ESTHER</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Category">
+            <input type="checkbox" class="AccordionInput" name="product_category" id="bodycare_section">
+            <label for="bodycare_section" class="AccordionLabel">Body Care</label>
+        <div class="AccordionContent">
+            <div class="Products">
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Product">
+                    <div class="ProductLabel">
+                        <span class="ProductName">SERRIT</span>
+                        <span class="ProductPrice">Rp150.000</span>
+                    </div>
+                    <div class="ProductImage">
+                        <img src="assets/sincerely-media-LtGwgq7r_mc-unsplash.jpg">
+                        <div class="Overlay">
+                            <div>
+                                <h2 class="ProductName">SERRIT</h2>
+                                <div class="ProductDescription">
+                                    <p>
+                                        Praesent laoreet, sem quis mattis luctus,
+                                        ligula lorem convallis turpis,
+                                        malesuada rhoncus magna leo vitae est.
+                                    </p>
+                                    <p>
+                                        Suspendisse lectus urna,
+                                        eleifend et ante tincidunt, rutrum.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="Button" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Footer">
+    <div class="Subscribe">
+        <div class="SubscribeMessage">
+            <span>Subscribe to stay in touch with us.</span>
+        </div>
+        <div class="SubscribeInput">
+            <input class="EmailInput" id="subscribe_email_input" placeholder="Your Email Address..">
+            <a class="SubscribeButton" onclick="subscribe()">
+                SUBSCRIBE
+            </a>
+        </div>
+    </div>
+    <div class="FooterMid">
+        <h1>VOR</h1>
+        <div class="Links">
+            <h2>LINKS</h2>
+            <ul>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="specials.html">Promotions</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="Links">
+            <h2>SUPPORT</h2>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="Attribution">
+        <span>VOrskins 2022</span>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+.Hero {
+    background-image: url("bg/anna-hliamshyna-VDR-uVIHP_8-unsplash.jpg");
+    height: clamp(100px, 30vw, 500px);
+}
+
+.HeroContent h1 {
+    font-size: 12rem;
+}
+
+.Accordion {
+    margin: 20px 0;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.Accordion .Category {
+    margin: 5px 0;
+}
+
+.AccordionInput {
+    display: none;
+}
+
+.AccordionLabel {
+    font-size: 4rem;
+
+    display: block;
+
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+
+    width: 100%;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: black;
+}
+
+.AccordionLabel::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 3rem;
+    height: 3rem;
+    background-image: url("bg/arrow-down-sign-to-navigate.png");
+    background-size: contain;
+    transition: transform 0.6s;
+}
+
+.AccordionContent {
+    display: none;
+    margin: 10px 4rem;
+}
+
+.AccordionInput:checked ~ .AccordionContent {
+    display: block;
+}
+
+.AccordionInput:checked ~ .AccordionLabel::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
+.Products {
+    gap: 10px;
+}
+
+.Products .Product {
+    padding-top: 0;
+    width: clamp(160px, 16vw, 600px);
+    /*background: rgb(73, 69, 69, 0.4);*/
+    /*font-size: 1em;*/
+}
+
+.ProductLabel .ProductName {
+    /*max-font-size: 2.7rem;*/
+    text-align: left;
+    font-size: 2rem;
+}
+
+.ProductLabel .ProductPrice {
+    max-font-size: 2.7rem;
+    font-size: 2rem;
+}
+
+.Product .Overlay .ProductName {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.Product .Overlay {
+    padding: 1.5rem;
+}
+
+.Product .Overlay .ProductDescription {
+    text-align: left;
+    font-size: 1.3rem;
+    /*padding-left: 1rem;*/
+}
+
+.Product .Overlay .Button {
+    border: none;
+    background-color: #494545;
+    width: 90%;
+    padding: 1rem;
+    font-size: 2rem;
+}

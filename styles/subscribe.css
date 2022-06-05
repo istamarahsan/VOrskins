@@ -1,0 +1,150 @@
+html {
+    font-size: 0.32vw;
+}
+
+.Hero {
+    background-image: none;
+    background-color: #49454590;
+    height: clamp(50px, 15vw, 500px);
+}
+
+.HeroContent h1 {
+    font-size: 12rem;
+}
+
+.Form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin: 34px 6rem 6rem 0;
+    padding-left: 30rem;
+}
+
+.FormItem {
+    margin-bottom: 50px;
+    width: clamp(100px, 50%, 800px);
+}
+
+.FormItem label {
+    position: relative;
+    font-size: clamp(15px, 4.5rem, 38px);
+    padding-bottom: 10px;
+}
+
+.FormItem .RequiredItem::before {
+    content: "*";
+    color: red;
+    /*height: 100%;*/
+    position: absolute;
+    /*top: -0.5em;*/
+    left: -0.6em;
+    font-size: clamp(10px, 0.5em, 25px);
+}
+
+.FormItem .ErrorMessage {
+    display: none;
+    font-size: clamp(10px, 3rem, 25px);
+    color: red;
+}
+
+.TextInput, .Dropdown {
+    display: flex;
+    flex-flow: column;
+}
+
+.TextInput input {
+    background: transparent;
+    outline: none;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    font-size: clamp(13px, 4rem, 33px);
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+.TextInput input::placeholder {
+    color: #00000050;
+}
+
+.SelectDropdown {
+    background-color: #F8EAE3;
+    outline: none;
+    border-width: 1px 0;
+    border-color: black;
+    width: clamp(50px, 70%, 70%);
+    font-size: clamp(13px, 4rem, 33px);
+    padding: 8px 0.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.CheckboxOption input {
+    display: none;
+}
+
+.CheckboxOption {
+    /*cursor: pointer;*/
+}
+
+.MultiCheckbox .CheckboxOption {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.MultiCheckbox .ImageContainer {
+    width: clamp(10px, 4rem, 33px);
+    height: clamp(10px, 4rem, 33px);
+}
+
+.CheckboxIcon {
+    object-fit: contain;
+}
+
+.MultiCheckbox {
+    display: flex;
+    flex-flow: column;
+}
+
+.CheckboxOption label {
+    padding: 0;
+}
+
+.MultiCheckbox .CheckboxOption {
+    padding-bottom: 2rem;
+}
+
+.MultiCheckbox .CheckboxLabel {
+    font-size: clamp(15px, 3rem, 25px);
+}
+
+.SingleCheckbox {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+}
+
+.SingleCheckbox .ImageContainer {
+    width: clamp(25px, 6rem, 50px);
+    height: clamp(25px, 6rem, 50px);
+}
+
+.Form .Button {
+    font-size: 6rem;
+    width: 60%;
+    background-color: #4B4E36;
+    cursor: pointer;
+}
+
+#form_submit_button {
+    width: 60%;
+    display: flex;
+    flex-flow: row;
+    gap: 2rem;
+}

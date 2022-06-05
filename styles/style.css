@@ -1,0 +1,308 @@
+html {
+    /*font-size: 10px;*/
+    font-size: 0.55vmax;
+    /*font-size: 3vmin;*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(180deg, #F8EAE3 0%, rgba(248, 234, 227, 0.00520833) 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+* {
+    font-family: "Martel", serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    /*color: black;*/
+}
+
+.ImageContainer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImageContainer img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.Button {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 8px 5px 8px;
+    font-weight: 400;
+    background-color: rgb(255,255,255,0.15);
+}
+
+.ProductImage {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProductImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.Hero {
+    margin: 10px;
+    /*background-image: url("bg/fleur-kaan-w4Dj3MshHQ0-unsplash.jpg");*/
+    background-image: url("bg/fleur-kaan-j0dxJsNgnVM-unsplash-CROP.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    /*width: 95%;*/
+    height: clamp(500px, 85vw, 1000px);
+    /*min-height: 800px;*/
+    /*height: 85vh;*/
+}
+
+.HeroContent {
+    text-align: center;
+    margin: 6rem 20% 6rem 20%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.HeroContent h1 {
+    /*background-color: rgb(255,255,255, 0.3);*/
+
+    color: white;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 137.7%;
+    font-size: 8rem;
+    /*font-size: 4.3vw;*/
+}
+
+.HeroContent h2 {
+    color: white;
+    text-align: left;
+    font-size: 3rem;
+    /*font-size: 2.15vw;*/
+    font-style: normal;
+    font-weight: 300;
+    line-height: 137.7%;
+    text-decoration: underline;
+    /*margin-block-start: 0.1em;*/
+    margin-block-end: 0.5em;
+}
+
+#hero_button {
+    color: white;
+    font-size: 4rem;
+    /*font-size: 2.15vw;*/
+    width: 35%;
+    /*margin-left: 32%;*/
+    /*margin-right: 35%;*/
+}
+
+.Marquee {
+    font-size: 6rem;
+    /*font-size: 4.5vw;*/
+    letter-spacing: 6rem;
+    font-weight: 300;
+    text-align: center;
+
+    /*width: 90%;*/
+    /*height: 134px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: black;
+}
+
+.Featured {
+    padding-left: 2rem;
+    margin: 10px 0;
+}
+
+.Featured .SectionTitle {
+    font-weight: 300;
+    font-size: 7rem;
+}
+
+.Products {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fit, 1fr);*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Product {
+    padding-top: 10px;
+
+    width: clamp(240px, 32vw, 600px);
+    /*max-height: 500px;*/
+    /*min-width: 200px;*/
+    /*width: 32vw;*/
+    /*max-width: 600px;*/
+    /*width: minmax(200px, 600px);*/
+
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+
+.ProductLabel {
+    /*border-width: 1px 1px 0 1px;*/
+    /*border-style: solid;*/
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: baseline;
+
+    /*font-size: 3.2rem;*/
+    font-size: clamp(14px, 3.2rem, 3.2rem);
+}
+
+.ProductName {
+    font-weight: 300;
+}
+
+.ProductLabel .ProductName {
+    text-align: left;
+    /*font-size: 3.2rem;*/
+}
+
+.ProductLabel .ProductPrice {
+    text-align: right;
+    /*font-size: 3.2rem;*/
+}
+
+.ProductImage {
+    flex-grow: 1;
+    max-height: 600px;
+    position: relative;
+    margin: 5px;
+}
+
+.Overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.Overlay:hover {
+    opacity: 1;
+    transition: 100ms;
+}
+
+.Product .Overlay {
+    padding: 2.5rem;
+    background-color: rgb(248, 234, 227, 0.7);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.Product .Overlay .ProductName {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.Overlay .ProductDescription {
+    text-align: left;
+    font-size: 2rem;
+    /*padding-left: 1rem;*/
+}
+
+.Product .Overlay .Button {
+    border: none;
+    background-color: #494545;
+    width: 90%;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.TextBanner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: #4B4E36;
+    /*height: 300px;*/
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 5rem;
+    /*font-size: 3.1vw;*/
+    padding: 3rem 0.45rem;
+    font-weight: 100;
+    color: white;
+}
+
+.TextBanner em {
+    /*text-decoration: underline;*/
+}
+
+#midtext_about_button {
+    color: black;
+    background-color: white;
+    font-size: 3rem;
+    /*font-size: 1.5vw;*/
+    padding: 2rem;
+
+}
