@@ -171,6 +171,7 @@
 }
 
 .SpecialSegment .Details .FullTNC {
+    color: white;
     background-color: #4B4E36;
     font-size: 4rem;
     padding: 5px 10px;
