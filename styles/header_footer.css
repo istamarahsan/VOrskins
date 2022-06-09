@@ -2,33 +2,32 @@
 
 .Header {
     padding: 1rem 1.5rem 1rem 1.5rem;
-    /*height: 78px;*/
-
     background-color: #F8EAE390;
-
     text-align: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     position: sticky;
     z-index: 1;
     top: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .Header h2 {
-    /*font-size: 3.4rem;*/
     font-size: 35px;
     color: black;
 }
 
 #menu_button {
     cursor: pointer;
-    /*height: clamp(20px, 4.8rem, 4.8rem);*/
     height: 40px;
     object-fit: contain;
+}
+
+#menu_label {
+    padding-left: 10px;
+    font-size: 25px;
 }
 
 #cart {
@@ -40,14 +39,8 @@
 
 .Subscribe {
     color: white;
-
     padding: 2rem 1.5rem 2rem 1.5rem;
-    /*padding-left: 15px;*/
-    /*padding-right: 15px;*/
-
-    /*height: 121px;*/
     background-color: #494545;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -85,18 +78,17 @@
 
 .FooterMid {
     padding: 1rem 5rem;
-
-    /*display: grid;*/
-    /*grid-template-columns: repeat(auto-fill, auto);*/
-    /*grid-auto-columns: minmax(200px, auto);*/
-
     display: flex;
     flex-flow: row wrap;
-    /*justify-content: space-between;*/
     justify-content: flex-start;
     align-items: flex-start;
-
+    gap: 5rem;
     text-align: left;
+}
+
+.FooterMid .Links {
+    display: flex;
+    flex-flow: row;
 }
 
 .FooterMid h1 {
@@ -105,23 +97,22 @@
     font-weight: 100;
 }
 
-.FooterMid .Links {
+.FooterMid .LinkColumn {
     min-width: 300px;
     padding: 3rem 4rem;
     display: flex;
     flex-flow: column;
-
     font-size: 2rem;
     font-weight: 100;
 }
 
-.FooterMid .Links ul {
+.FooterMid .LinkColumn ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.FooterMid .Links li {
+.FooterMid .LinkColumn li {
     margin: 0;
     padding-bottom: 1rem;
 }
@@ -137,17 +128,12 @@
 
 #sidebar {
     display: none;
-    /*display: block;*/
     position: fixed;
     top: 0;
     left: 0;
-
     border-right: 1px solid #000000;
-
     height: 100%;
-    /*width: clamp(200px, 400px, 400px);*/
     width: 400px;
-
     background-color: #F8EAE3;
     z-index: 2;
     overflow: auto;

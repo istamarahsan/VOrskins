@@ -1,6 +1,6 @@
 .Hero {
     background-image: url("bg/anna-hliamshyna-VDR-uVIHP_8-unsplash.jpg");
-    height: clamp(100px, 30vw, 500px);
+    height: clamp(100px, 30vw, 400px);
 }
 
 .HeroContent h1 {
@@ -15,7 +15,7 @@
 }
 
 .Accordion .Category {
-    margin: 5px 0;
+    margin: 3rem 6rem;
 }
 
 .AccordionInput {
@@ -65,47 +65,45 @@
 }
 
 .Products {
-    gap: 10px;
+    margin: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
 }
 
 .Products .Product {
     padding-top: 0;
-    width: clamp(160px, 16vw, 600px);
-    /*background: rgb(73, 69, 69, 0.4);*/
-    /*font-size: 1em;*/
+    min-height: 423px;
 }
 
 .ProductLabel .ProductName {
-    /*max-font-size: 2.7rem;*/
     text-align: left;
-    font-size: 2rem;
 }
 
 .ProductLabel .ProductPrice {
-    max-font-size: 2.7rem;
-    font-size: 2rem;
+    font-size: 20px;
 }
 
 .Product .Overlay .ProductName {
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-    font-size: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 23px;
 }
 
 .Product .Overlay {
-    padding: 1.5rem;
+    padding: 12px 16px;
 }
 
 .Product .Overlay .ProductDescription {
     text-align: left;
-    font-size: 1.3rem;
-    /*padding-left: 1rem;*/
+    font-size: 12px;
 }
 
 .Product .Overlay .Button {
     border: none;
     background-color: #494545;
     width: 90%;
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 5px;
+    font-size: 16px;
 }

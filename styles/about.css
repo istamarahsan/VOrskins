@@ -41,6 +41,12 @@
     align-items: flex-start;
 }
 
+@media screen and (max-width: 800px) {
+    .VisionMission {
+        flex-flow: row wrap;
+    }
+}
+
 .VisionMission .TextContainer {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -98,14 +104,13 @@
 
 
 .Commitment {
-    /*padding-top: 20px;*/
     width: clamp(100px, 10vw, 500px);
 }
 
 .Commitment h4 {
     padding-top: 1rem;
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 .Commitment .ImageContainer {

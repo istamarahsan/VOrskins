@@ -1,7 +1,5 @@
 html {
-    /*font-size: 10px;*/
     font-size: 0.55vmax;
-    /*font-size: 3vmin;*/
 }
 
 * {
@@ -39,7 +37,6 @@ body {
 h1, h2, h3, h4, h5, h6, p, span, a {
     margin-block-start: 0.1em;
     margin-block-end: 0.1em;
-    /*color: black;*/
 }
 
 .ImageContainer {
@@ -79,7 +76,6 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 .Hero {
     margin: 10px;
-    /*background-image: url("bg/fleur-kaan-w4Dj3MshHQ0-unsplash.jpg");*/
     background-image: url("bg/fleur-kaan-j0dxJsNgnVM-unsplash-CROP.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -90,10 +86,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     justify-content: center;
     align-items: center;
 
-    /*width: 95%;*/
     height: clamp(500px, 85vw, 1000px);
-    /*min-height: 800px;*/
-    /*height: 85vh;*/
 }
 
 .HeroContent {
@@ -108,47 +101,35 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 }
 
 .HeroContent h1 {
-    /*background-color: rgb(255,255,255, 0.3);*/
-
     color: white;
     font-style: normal;
     font-weight: 100;
     line-height: 137.7%;
     font-size: 8rem;
-    /*font-size: 4.3vw;*/
 }
 
 .HeroContent h2 {
     color: white;
     text-align: left;
     font-size: 3rem;
-    /*font-size: 2.15vw;*/
     font-style: normal;
     font-weight: 300;
     line-height: 137.7%;
     text-decoration: underline;
-    /*margin-block-start: 0.1em;*/
     margin-block-end: 0.5em;
 }
 
 #hero_button {
     color: white;
     font-size: 4rem;
-    /*font-size: 2.15vw;*/
     width: 35%;
-    /*margin-left: 32%;*/
-    /*margin-right: 35%;*/
 }
 
 .Marquee {
     font-size: 6rem;
-    /*font-size: 4.5vw;*/
     letter-spacing: 6rem;
     font-weight: 300;
     text-align: center;
-
-    /*width: 90%;*/
-    /*height: 134px;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +143,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 
 .Featured {
     padding-left: 2rem;
-    margin: 10px 0;
+    margin: 10px 20rem;
 }
 
 .Featured .SectionTitle {
@@ -170,44 +151,35 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     font-size: 7rem;
 }
 
-.Products {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(auto-fit, 1fr);*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+.Featured .Products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 380px);
+    justify-content: center;
     align-items: stretch;
+    grid-gap: 5rem;
 }
 
 .Product {
     padding-top: 10px;
-
-    width: clamp(240px, 32vw, 600px);
-    /*max-height: 500px;*/
-    /*min-width: 200px;*/
-    /*width: 32vw;*/
-    /*max-width: 600px;*/
-    /*width: minmax(200px, 600px);*/
-
     display: flex;
-    flex-flow: column;
+    flex-flow: column-reverse;
     flex-shrink: 0;
     align-items: stretch;
 }
 
-.ProductLabel {
-    /*border-width: 1px 1px 0 1px;*/
-    /*border-style: solid;*/
-    padding-left: 15px;
-    padding-right: 15px;
+.Featured .Product {
+    min-height: 625px;
+}
 
+.ProductLabel {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-between;
     align-content: baseline;
+}
 
-    /*font-size: 3.2rem;*/
-    font-size: clamp(14px, 3.2rem, 3.2rem);
+.Featured .ProductLabel {
+    font-size: 27px;
 }
 
 .ProductName {
@@ -215,18 +187,16 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 }
 
 .ProductLabel .ProductName {
+    display: none;
     text-align: left;
-    /*font-size: 3.2rem;*/
 }
 
 .ProductLabel .ProductPrice {
-    text-align: right;
-    /*font-size: 3.2rem;*/
+    text-align: left;
 }
 
 .ProductImage {
     flex-grow: 1;
-    max-height: 600px;
     position: relative;
     margin: 5px;
 }
@@ -245,7 +215,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
 }
 
 .Product .Overlay {
-    padding: 2.5rem;
+    padding: 20px;
     background-color: rgb(248, 234, 227, 0.7);
     display: flex;
     flex-flow: column;
@@ -254,16 +224,18 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     text-align: center;
 }
 
-.Product .Overlay .ProductName {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    font-size: 4rem;
+.Featured .Product .Overlay .ProductName {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 30px;
 }
 
 .Overlay .ProductDescription {
     text-align: left;
-    font-size: 2rem;
-    /*padding-left: 1rem;*/
+}
+
+.Featured .Overlay .ProductDescription {
+    font-size: 16px;
 }
 
 .Product .Overlay .Button {
@@ -271,39 +243,64 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     color: white;
     background-color: #494545;
     width: 90%;
-    padding: 1rem;
-    font-size: 2rem;
+}
+
+.Featured .Product .Overlay .Button {
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Featured .Products {
+        grid-template-columns: repeat(auto-fill, 200px);
+    }
+
+    .Featured .Product {
+        min-height: 355px;
+    }
+
+    .Featured .ProductPrice {
+        font-size: 20px;
+    }
+
+    .Featured .Product .Overlay {
+        padding: 10px;
+    }
+
+    .Featured .Product .Overlay .ProductName {
+        font-size: 22px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .Featured .Product .Overlay .ProductDescription {
+        font-size: 12px;
+    }
+
+    .Featured .Product .Overlay .Button {
+        padding: 5px;
+        font-size: 16px;
+    }
 }
 
 .TextBanner {
     margin-top: 10px;
     margin-bottom: 10px;
-
     background-color: #4B4E36;
-    /*height: 300px;*/
-
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     font-size: 5rem;
-    /*font-size: 3.1vw;*/
     padding: 3rem 0.45rem;
     font-weight: 100;
     color: white;
-}
-
-.TextBanner em {
-    /*text-decoration: underline;*/
 }
 
 #midtext_about_button {
     color: black;
     background-color: white;
     font-size: 3rem;
-    /*font-size: 1.5vw;*/
     padding: 2rem;
-
 }
